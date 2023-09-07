@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font myriad-pro -->
+    <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font Qicksand -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- font utm Beautiful-Caps -->
+    <link
+      href="https://fonts.cdnfonts.com/css/utm-beautiful-caps"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/base.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-container">
+        <div class="header">
+          <div class="header-content">
+            <div class="header-content__address">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>160 Phạm Văn Bạch,P.15,Q.Tân Bình,TP.HCM</p>
+            </div>
+            <div class="header-content__contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="i"
+              >
+                <image
+                  x="0px"
+                  y="0px"
+                  width="21px"
+                  height="18px"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAQAAAAeG12lAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYOHhVc7EoJAAABh0lEQVQoz42SP2hTURSHv5emtuCrWrTSFKlGHIKrDh3cBCmIg5urYHF2chEXV7s5qHOhIpYGHcKzobh0qLgJth3S558WixFCw4OA0XwOuXngoPV3l8v5fvecc++5keSKqVBmnAnGadGkRcomWc5FjJx1wYYtO3btq2vHltsuOGskgjhp1X+r6qREjrHM5VBil/e0ARhiiDHOUwpklet4K5zsOe8x+WOdcN5e4HOYhO1rccrp3DZixVisB54UKJGRkbEErLNGhZiYmNt84C5QDXyqyHOG+clRalzkJIeo02GUjDNEXKLAG56yzzA/cNmm31x3xnfqS1Ob1tRXflIfWPatqR9dLDJHBdnhCReANQ5znDpXWGWCae6xx1VOAY3BJR6G5l+44Ref2XPRhqodZ/qeAgDXuBPeb4PvtNlCttgHYJTHHBkM9qzb+VwSU7+a+Muau3n0kcV+1huU8y+xQsoeK0DCTh69yel+1vsepLbnBr0epAigAHT/y04RWKKE+FfPCJt8ht+kzFGHeT7WsAAAAABJRU5ErkJggg=="
+                />
+              </svg>
+              <p>0912 561 647 - 0912 561 647</p>
+              <div class="header-content__contact--media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="16px"
+                  height="16px"
+                >
+                  <image
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYOGwU8LK4oAAABFklEQVQoz12RMSgEcBSHvzshLAhZWC7DDXRISgbJImWRum4zWW4zGY02A4vFcItLxKYkLKIwIMOZzK50w+ly3X2GO/zPW1699+v93vseIuKsB95ZVnOeOFCvIrW05aHdNrut7v41fwQL6oyITebVwVAQBZaAEgAVLoA5gogChaB4AzyHAsS4+mybiFkfjIg4YfpvyQ0rXppyx1u76u5Jj0Ui1gb1MsIm48xzCkyxSJw4R7xF607vnPMCrNIKVChRpkqJr59zYqbcU/XKjtACcdpr91122Elf1UzjkgkLrv+C6fTRou0hyawaC9itWLUnJFkFRgMwQ1yQD0GNWfTDNRNG7DPpvf3/nxU3Y85PnzwzbUvjN78BW7/2GVcu64sAAAAASUVORK5CYII="
+                  />
+                </svg>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="16px"
+                  height="16px"
+                >
+                  <image
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYOGyUHQo7gAAAA2klEQVQoz4WRIW4CARBF327A45p07SYEgUC1SZOa1nOBhgR80YjaJigUiwLLQWqXohBcgKZ1TZCQfRjYLYXSP+7Nz8zPDJZtm3pOqW3LJZ7o88ozv3VFnT5galdO6sata19MUW/3sObEhQsn1nxQtzY1zEe2mFMhIaHCnIhH7vgC1MSeAzd2xIax2HHjwJ6JkmdeiRj56VhcHXBhmNowEpdmxk4PuJRnCFjzzjdVBIKcH60Ym5n9tUKHYmwsDgsY6I/rffAG3HNdoGPDGYXMLvZnIaOLhhH/vXsHg9MAaBLGMNYAAAAASUVORK5CYII="
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="nav-content">
+            <img src="/assets/img/logo.jpg" alt="" />
+            <div class="nav-content__tab">
+              <div>
+                <i class="fa-solid fa-bars"></i>
+                <p>Danh mục sản phẩm</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Trang chủ</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Về chúng tôi</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Dịch vụ</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Thư viện</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Tin tức</p>
+              </div>
+            </div>
+            <div class="nav-content__tab">
+              <div>
+                <p>Liên hệ</p>
+              </div>
+            </div>
+            <div class="nav-content__tab icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="overlay"></div>
+          <div class="slider-info">
+            <p class="slider-info__header">Best Selling Products</p>
+            <p class="slider-info__slogan">Uy tín làm nên thương hiệu</p>
+            <button>Tìm hiểu thêm</button>
+            <div class="list-device">
+              <div class="item">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="46px"
+                    height="50px"
+                  >
+                    <image
+                      x="0px"
+                      y="0px"
+                      width="46px"
+                      height="50px"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAyCAQAAACJpCFcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYOJxe8ZqafAAADkklEQVRYw+2XS2xUVRjHf/fOLZ22MJZKJ1jEkgxog/E1C2PUjXFBYgwYHglqJARcqTxWJkYMLlgYxYQmjWIIC+yCwKLQwgbiAjduFEICRLElQwkFwrRAp52+Zub+XUzbuXd6J3OmU3Tj/6zu+b7zu+d85/GdY4kivcZm3mQVDViYSYyS4Fe6+N1vsHzwCPv5lFrEXUYN0WDRQAswxiEOMB4MD/ETOxnjB3oYZMIYDmGirOcTwrSz1zem2fK+pJTeFfMsG5RWVhsKNQVTrc5I2j9vNELfSDqhmrnw55TQhJ6tCv6ScrqmZ2a+7dn4PEGUAe5WEOm5usMQUZbOfBbgtdQzzGRV8EmGWUx4LtwCNB+iT8Iq7A/bU70wUoFkV8Mpp//h/wK86BwtwLNAjqmq4GlyiGwx3KYFWMGHrJo3OsZHRHFomR2BEIrpiNLK66EOqLHiU2WZvtfINCGlw1o5c3DF9aekAXWqXT0al9StporQy/WLpHH1qF2dGpB0Wc8LtFQXJHWrTbZQndbplqRvK4L/KKlf61QnZKtN3ZLOagnaJumKmj2uG5XRHbUZo+Ma0pQ2emqadVXSJps3gJ9JeibmFJd4ileMJzJOExc55alJcgx4yyYG9PqcxV/AEmN4I3C96ODrBdocwkCmyH0caGEFNWWvFyLD8ukWXmWAsIMLgYjP2W1wc7FwqQsgWIDrlGw2ScrgcBDCKeQev4LhNnCQI9hl++4CX7Ir2K90zx9wv2y/8xouZSg98NK/LVaocvgC6D+CZ4wZ2VKG4MhaQDNRasuCRZZGqGS1hIB97Ck9VR64iJTiBMPP8ToNxmEZI805c/gJ/qAe1xBuM8YNczjBzhVIgPW4lmIN4NqMAPULDo8C92wSwIsLDo8DCbReUkKrq3quFJeXNShX71haTCfvcYlD/EaSjPHTNkjCIcqrfMELdLHNErRylLeBfobI4GCTw8U22EJ5zXi7ZHFYRitwge305x+5ET5mC2t4EoCJ6cwyZTQKscjXaoQ+TnKYR/4XdCtdxPmK03zNJjo4imOQoLPs5DOO8R1b2cdFPuAGubzRu4n6SQHXuco94CaXDcNyE7jNNfqAFH8XDN5NFJr9lQXUGU+jN/vXeGfKCxchYCUxmqgkjdhAMzGeBkK+y5FvfR6XNKg+pSXtMF7VOySNqlcPJB33Wvxua3Vej5RWUh2KGMMj6lBSaT3Uea31Wv4Bhju/bkvAo68AAAAASUVORK5CYII="
+                    />
+                  </svg>
+                </div>
+                <p>ghế</p>
+              </div>
+              <div class="item">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="55px"
+                    height="39px"
+                  >
+                    <image
+                      x="0px"
+                      y="0px"
+                      width="55px"
+                      height="39px"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAnCAQAAAABBBhWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYPBw5MS0DKAAABNUlEQVRYw+2YsUoDQRCGv7kcl+NIDFjaWwR9BLX0HSwtbFIIwoGvkcpGrH0GwUo7+yCIoIWIQRD1QEzI5be4U4+Q7txgsf/ALEwx38wOA8uaYJ1tVgDhSgY8csYAbWmoxehJG6YLNgHInfUGIgTg3PRKhytScswhrkWfLs8hIfDApcPeCg3pEgUICJzDIgJAAQbEDi/yGxcBZrphlYyB49lFrJFwjQ4XtAaSdGCK6bHLMgZMabMEvJHRqNVPTpsO8E5WTI0XTjhChcVKlChUKknqKVBSy0z7kqRUoRIligtOWFbzWZ5jAEZM+ag5r3HpJ0x+g7MrYBVfT3Mzud84j/M4j/M4j/M4j/M4j/uXuEbF19PcTLO4WwDu/wB3V8n3I5v5bmiyR8Zp+eSuoyY7tDhmVA1+ARH8UGAGSIaAAAAAAElFTkSuQmCC"
+                    />
+                  </svg>
+                </div>
+                <p>bàn</p>
+              </div>
+              <div class="item">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="62px"
+                    height="56px"
+                  >
+                    <image
+                      x="0px"
+                      y="0px"
+                      width="62px"
+                      height="56px"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA4CAQAAAAPkYPSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCQYPBxnPmMUNAAAD1klEQVRYw+2YTWhcVRTHf/e+mWQySQQNjZpqZuOmxsYvKg0orhRLi7iwi1KQSqGiSBXBhS7KIJZ0JQgV6yag2bRQpNCNiB+gKKioYJKabto0IKWmdbRpJ5nOu++46Mudd2fG+t6bN3Zhzt3ce98593/Pueecd+5VgkPjvMA9KJqmY5HHNX7kMBdiS0i0jcicdErHpSjEazlnJ49xL6t8zXl6U2i+wia28Awlfk2j+UsisigPx915S9stVZH48trZiQ9AkEJrQklJIq9bZlTTUSQhD5WEXSdhzprWwdfB18HXwf9f4Inyc3bgCjBcSb1ajSDJ5t0/mAGKPM4QPSmgV3iIHMQvwVzwOQwbeId6y+4DBGXtFCDoNjwFeljk97jgXjk6Oo9mMx4eOtIUigEK9OKjgDz9FPAwTXwehiXe5Ju44KrFRvdTajKdYCjzCDO8gaZOiYMMMcVR+hw+jWGOswkOKma9dVxEPgn7d8iCiLycutL7hxruBhaiERmCavGWVJQDdjCBd8Oyz2cc2MTbKHzu5DZgJ6VUBfb1A1rlO44i++RSxxeFNHRZXlUyyxhLLLYJnWbXIBJqneVBwyjDzCMVETnQufMkbAdEpJJDARvZnPr80lCNuwCl5FsmgBqatehOatB2Usr51swZ0IPie+QJOXVTHG5etimBMcbIY7iVMsN8zvuJjqDGHnZQYZIF8uFclZrVfRAv7Pns5Fl+Y5KLwByzUSfok9Mi8m5i53lLRM7JSGTmPjkiH8mUTMt+h/M1EflFBtrdzwfRkMLxegFNvx33cZCnw/4u5vnU4fQYWKsYouCdRK5wzfZXmGYIjaA5xQ8RLuPiZJChAdDcHkYMwFd8SR4BfAqMhLMBg65QVuDDHOFKZLUgzILRvOlT6ga4kOfB5GLZgCuucoIlG2prDyTYMAOos5Wt2YPDH5Q5a8/cRH7QOWv4gNe7Aw4BJvRmeJJ9FDB4zDLJX5anqWbLCjz6jFRkP9vD/na+iMS55wplBS5Wa6jyATrUfIafHOt0CbweGZ3kZFsuvzvgQxziol1N8DFhmdkwtWFLN8CFfnYlF8sqzuvMUI1oKfZLgwyjjGYPDhfYy0IIJQhe+GYfRO4GwiuUuwEuXOZPOxpnN7dg0PzMNKt2ftUV6kac93GIbXZ07r+I80aorXCMIgUCFGech3/jCmUBfl2f6K3vQ45RJEBRabIP6AZnzllEp9pOBdjAYS5Z2YBqmM166bEe7/MAUG/4RhRqmQBYTgx+ghfZyFMxuT/mqjWE86N5jgneYzYx/KM8z93822uMZpnPmGr4/N8O+T/gXLCjOgAAAABJRU5ErkJggg=="
+                    />
+                  </svg>
+                </div>
+                <p>tủ tivi</p>
+              </div>
+              <div class="item">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="87px"
+                    height="54px"
+                  >
+                    <image
+                      x="0px"
+                      y="0px"
+                      width="87px"
+                      height="54px"
+                      xlink:href="data:img/png;base64,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"
+                    />
+                  </svg>
+                </div>
+                <p>bàn trang điểm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="body-intro">
+            <div class="body-intro__left">
+              <p class="body-intro__label">Giới thiệu</p>
+              <p class="body-intro__header">XƯỞNG SẢN XUẤT BÀN GHẾ A.TÚC</p>
+              <p class="body-intro__sub-header">
+                Chúng tôi đóng bàn ghế cafe giá sỉ cho các quán cafe, quán trà sữa. Chúng tôi tự tin vào tay nghề của mình và được khách hàng kiểm chứng
+              </p>
+              <p class="body-intro__content">
+                Sản phẩm của chúng tôi giao hàng toàn quốc, đóng nhanh gọn. Chúng tôi nhận đóng bàn ghế cafe theo yêu cầu khách hàng. Báo giá chính xác, rõ ràng. Thiết kế miễn phí cho khách hàng đặt số lượng lớn.
+              </p>
+              <button class="body-intro__button">Xem thêm >></button>
+            </div>
+            <div class="body-intro__right">
+              <div class="body-intro__right-content">
+                <img src="/assets/img/boder-logo.jpg" alt="" class="body-intro__right-boder">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
