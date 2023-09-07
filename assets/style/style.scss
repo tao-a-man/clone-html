@@ -6,6 +6,7 @@
 }
 html {
   font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: black;
@@ -17,6 +18,11 @@ img {
 @font-face {
   font-family: "SVN";
   src: url("/assets/font/SVN-Friends\ Forever.otf");
+}
+
+@font-face {
+  font-family: "MyriadPro-BoldCond";
+  src: url("/assets/font/Myriad\ Pro\ Bold\ Condensed.ttf");
 }
 .wrapper {
   .wrapper-container {
@@ -30,13 +36,13 @@ img {
         margin: 0px auto;
         display: flex;
         align-items: center;
+        color: #fff;
         justify-content: space-between;
         .header-content__address {
           display: flex;
           i {
             width: 12px;
             height: 15px;
-            color: #fff;
             margin-right: 4px;
           }
           p {
@@ -65,7 +71,7 @@ img {
               content: "";
               height: 20px;
               margin-left: 16px;
-              border-right: 1px dashed #9d2727;
+              border-right: 1px dashed #f39396;
             }
             i {
               width: 16px;
@@ -88,7 +94,8 @@ img {
         .nav-content__tab {
           height: 36px;
           padding: 10px 8px;
-          font-size: 15px;
+          font-weight: bold;
+          font-size: 16px;
           text-transform: uppercase;
           div {
             display: flex;
@@ -98,6 +105,8 @@ img {
           }
           &:hover {
             background-color: red;
+            color: #fff;
+            cursor: pointer;
           }
         }
         .nav-content__tab + .icon {
@@ -105,10 +114,28 @@ img {
         }
       }
     }
+    @keyframes changeBackground {
+      0% {
+        background-image: url("/assets/img/slide.jpg"); /* Thay thế 'image1.jpg' bằng đường dẫn của ảnh đầu tiên */
+      }
+      45% {
+        background-image: url("/assets/img/slide.jpg"); /* Thay thế 'image2.jpg' bằng đường dẫn của ảnh thứ hai */
+      }
+      55% {
+        background-image: url("/assets/img/slide2.png"); /* Thay thế 'image1.jpg' bằng đường dẫn của ảnh đầu tiên */
+      }
+      90% {
+        background-image: url("/assets/img/slide2.png"); /* Thay thế 'image1.jpg' bằng đường dẫn của ảnh đầu tiên */
+      }
+      100% {
+        background-image: url("/assets/img/slide.jpg"); /* Thay thế 'image1.jpg' bằng đường dẫn của ảnh đầu tiên */
+      }
+    }
     .slider {
-      background-image: url("/assets/img/slide.jpg");
+      // background-image: url("/assets/img/slide.jpg");
       height: 523px;
       position: relative;
+      animation: changeBackground 10s infinite;
       .overlay {
         height: 100%;
         background: linear-gradient(
@@ -128,10 +155,12 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: #fff;
+        margin-top: 26px;
         .slider-info__header {
           font-size: 72px;
-          font-family: "Myriad Pro";
-          letter-spacing: 12px;
+          font-family: "MyriadPro-BoldCond";
+          letter-spacing: 4px;
           font-weight: 600;
           text-transform: uppercase;
         }
@@ -139,20 +168,20 @@ img {
           margin-top: 20px;
           font-size: 38px;
           font-family: "SVN";
-          word-spacing: 18px;
+          word-spacing: 5px;
           letter-spacing: 4px;
           text-transform: none;
           text-shadow: 2px 1px 3px #000;
         }
         button {
           font-size: 16px;
-          font-weight: 600;
           width: 228px;
           height: 48px;
           background-color: transparent;
-          border: 4px solid #fff;
+          border: 2px solid #fff;
           margin-top: 28px;
           text-transform: uppercase;
+          color: #fff;
         }
         .list-device {
           display: flex;
@@ -178,8 +207,8 @@ img {
         }
       }
     }
-    .body {
-      padding: 115px 80px;
+    .body-info {
+      padding: 115px 80px 70px 80px;
       background-color: #eeeeee;
       .body-intro {
         position: relative;
@@ -191,7 +220,7 @@ img {
             display: block;
             height: 2px;
             width: 250px;
-            border-top: 2px solid;
+            border-top: 1px solid;
             margin-top: -42px;
           }
           .body-intro__label {
@@ -204,11 +233,11 @@ img {
           }
           .body-intro__header {
             font-size: 35px;
-            font-weight: 600;
+            font-weight: bold;
           }
           .body-intro__sub-header {
             font-size: 16px;
-            font-weight: 600;
+            font-weight: bold;
             font-style: italic;
             line-height: 1.8;
             margin: 14px 0px;
@@ -217,13 +246,15 @@ img {
             font-size: 14px;
             line-height: 2;
             text-align: justify;
+            font-weight: 500;
+            word-spacing: -1px;
           }
           .body-intro__button {
             margin-top: 52px;
             border: none;
             background-color: transparent;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: bold;
             font-style: italic;
           }
         }
@@ -231,13 +262,92 @@ img {
           width: 543px;
           height: 251px;
           flex: none;
-          .body-intro__right-content{
+          .body-intro__right-content {
             position: absolute;
-            top: -24px; 
+            top: -24px;
             .body-intro__right-boder {
             }
           }
         }
+      }
+    }
+    .body-product {
+      padding: 50px 80px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .body-product__header {
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        p {
+          color: #e7272d;
+        }
+      }
+      span {
+        line-height: 2;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .body-product__sepera {
+        width: 50px;
+        height: 1px;
+        border-bottom: 1px solid;
+        margin-top: 4px;
+      }
+      .body-product__list-product {
+        width: 100%;
+        margin-top: 48px;
+        .col-4 {
+          margin-bottom: 24px;
+        }
+        .body-product__list-product-content {
+          position: relative;
+        }
+        .body-product__list-product-content-wrapper {
+          position: absolute;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          .body-product__list-product-content-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          .body-product__list-product-content-price {
+            font-size: 14px;
+            color: #707070;
+            margin-top: 10px;
+            display: flex;
+            .body-product__list-product-content-xprice {
+              &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                display: block;
+                background-color: #707070;
+                top: 1;
+                margin-top: -14%;
+                margin-left: 8%;
+              }
+            }
+          }
+        }
+      }
+      .body-product__button {
+        width: 124px;
+        height: 44px;
+        background-color: #e7272d;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
